@@ -27,8 +27,8 @@ function buildMetadata(sample) {
         var PANEL = d3.select('#sample-metadata');
 
         PANEL.html('');
-        PANEL.append('h6').text(result.location);
         PANEL.append('h6').text(result.id);
+        PANEL.append('h6').text(result.otu_ids);
     });
 };
 //         Object.entries(result).forEach(([key, value]) =>
