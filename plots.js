@@ -28,7 +28,7 @@ function buildMetadata(sample) {
 
         PANEL.html('');
         PANEL.append('h6').text(result.location);
-        PANEL.append('h6').text(result.id)
+        PANEL.append('h6').text(result.id);
     });
 };
 //         Object.entries(result).forEach(([key, value]) =>
