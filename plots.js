@@ -108,10 +108,10 @@ function buildCharts(sample) {
     // 8. Create the trace for the bar chart. 
 
     trace = {
-      x: [sorted_values],
+      x: sorted_values,
       y: yticks,
       type: 'bar',
-      orientation: 'h'
+      // orientation: 'h'
     };
 
     var barData = [
@@ -119,7 +119,7 @@ function buildCharts(sample) {
     ];
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-      title: "Greek gods search results",
+      title: "Top 10 Bacteria Cultures Found",
       margin: {
         l: 100,
         r: 100,
