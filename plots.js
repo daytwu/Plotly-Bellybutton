@@ -90,7 +90,7 @@ function buildCharts(sample) {
     // var slice1 = sortedSamples.slice(0, 10)
     // console.log(slice1)
 
-    var yticks = sorted_id
+    var yticks = sorted_ids
 
     // var trace = {
     //   x: ["nonalcoholic beer", "nonalcoholic wine", "nonalcoholic martini", "nonalcoholic margarita", "ice tea", "nonalcoholic rum & coke", "nonalcoholic mai tai", "nonalcoholic gin & tonic"],
