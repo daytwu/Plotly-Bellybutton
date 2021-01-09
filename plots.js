@@ -110,6 +110,7 @@ function buildCharts(sample) {
     trace = {
       x: sorted_values,
       y: yticks,
+      text: otu_labels,
       type: 'bar',
       orientation: 'h'
     };
