@@ -90,7 +90,7 @@ function buildCharts(sample) {
     // var slice1 = sortedSamples.slice(0, 10)
     // console.log(slice1)
 
-    // var yticks = 
+    var yticks = sorted_id
 
     // var trace = {
     //   x: ["nonalcoholic beer", "nonalcoholic wine", "nonalcoholic martini", "nonalcoholic margarita", "ice tea", "nonalcoholic rum & coke", "nonalcoholic mai tai", "nonalcoholic gin & tonic"],
@@ -105,15 +105,29 @@ function buildCharts(sample) {
     //  };
     //  Plotly.newPlot("plotArea", data, layout);
 
-    // // 8. Create the trace for the bar chart. 
-    // var barData = [
-      
-    // ];
-    // // 9. Create the layout for the bar chart. 
-    // var barLayout = {
-     
-    // };
+    // 8. Create the trace for the bar chart. 
+
+    trace = {
+      x: [sorted_values],
+      y: yticks,
+      type: 'bar',
+      orientation: 'h'
+    };
+
+    var barData = [
+      trace
+    ];
+    // 9. Create the layout for the bar chart. 
+    var barLayout = {
+      title: "Greek gods search results",
+      margin: {
+        l: 100,
+        r: 100,
+        t: 100,
+        b: 100
+      }
+    };
     // 10. Use Plotly to plot the data with the layout. 
-    
+    Plotly.newPlot('plot', [trace], layout)
   });
 }
