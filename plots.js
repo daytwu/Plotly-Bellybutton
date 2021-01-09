@@ -82,7 +82,7 @@ function buildCharts(sample) {
     // var sortedSamples = sampleResult.sort((a, b) => b.sample_values - a.sample_values);
     var sorted_ids = otu_ids.slice(0, 10).map(otuID => `OTU ${otuID}`).reverse();
     var sorted_values = sample_values.slice(0, 10).reverse();
-    var sorted_labels = otu_labels.reverse();
+    var sorted_labels = otu_labels.slice(0,10).reverse();
 
     // console.log(sortedSamples);
     console.log(sorted_ids);
