@@ -79,7 +79,7 @@ function buildCharts(sample) {
     // Hint: Get the the top 10 otu_ids and map them in descending order  
     //  so the otu_ids with the most bacteria are last. 
 
-    var sortedSamples = sample_values.sort((a, b) => a - b);
+    var sortedSamples = sample_values.sort((a, b) => b - a);
     console.log(sortedSamples)
 
 
