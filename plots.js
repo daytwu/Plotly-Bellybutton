@@ -111,7 +111,7 @@ function buildCharts(sample) {
       x: sorted_values,
       y: yticks,
       type: 'bar',
-      // orientation: 'h'
+      orientation: 'h'
     };
 
     var barData = [
