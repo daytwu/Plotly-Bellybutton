@@ -123,8 +123,8 @@ function buildCharts(sample) {
 
     // 1. Create the trace for the bubble chart.
     traceBubble = {
-      x: sorted_values,
-      y: yticks,
+      x: otu_ids,
+      y: sample_values,
       text: sorted_labels,
       type: bubbleData,
       mode: 'markers',
