@@ -176,7 +176,7 @@ function buildCharts(sample) {
     // 4. Create the trace for the gauge chart.
     
     gaugeTrace = {
-      domain: {x: [0,1], y: [0,1] },
+      domain: {x: [0,10], y: [0,1] },
       value: wfreq,
       title: {text: "Bell Button Washing Frequency"},
       type: "indicator",
@@ -195,6 +195,6 @@ function buildCharts(sample) {
     };
 
     // 6. Use Plotly to plot the gauge data and layout.
-    Plotly.newPlot('myDiv', gaugeData, gaugeLayout)
+    Plotly.newPlot('gauge', gaugeData, gaugeLayout)
   });
 }
