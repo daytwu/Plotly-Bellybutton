@@ -166,7 +166,7 @@ function buildCharts(sample) {
     var result = resultArray[0];
 
     // 3. Create a variable that holds the washing frequency.
-    var wfreq = result.wfreq;
+    var wfreq = float(result.wfreq);
 
     // Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order 
@@ -176,12 +176,13 @@ function buildCharts(sample) {
     // 4. Create the trace for the gauge chart.
     
     gaugeTrace = {
-      domain: {x: [0,10], y: [0,10] },
+      domain: {x: [0,1], y: [0,1] },
       value: wfreq,
       title: {text: "Bell Button Washing Frequency"},
       type: "indicator",
       mode: 'gauge+number',
       gauge: {
+          axis: { range: [null, 10] },
           bar: { color: "black"},
           steps: [
             { range: [0, 2], color: 'red'},
