@@ -176,7 +176,7 @@ function buildCharts(sample) {
     // 4. Create the trace for the gauge chart.
     
     gaugeTrace = {
-      domain: {x: [0,10], y: [0,1] },
+      domain: {x: [0,10], y: [0,10] },
       value: wfreq,
       title: {text: "Bell Button Washing Frequency"},
       type: "indicator",
