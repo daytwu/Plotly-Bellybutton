@@ -178,7 +178,7 @@ function buildCharts(sample) {
     gaugeTrace = {
       domain: {x: [0,1], y: [0,1] },
       value: wfreq,
-      title: {text: "Bell Button Washing Frequency"},
+      title: {text: "<b>Bell Button Washing Frequency</b> <br> Scrubs per Week"},
       type: "indicator",
       mode: 'gauge+number',
       gauge: {
